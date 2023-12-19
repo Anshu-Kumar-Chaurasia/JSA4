@@ -1,0 +1,48 @@
+
+
+### Example for Logical Operators:
+```javascript
+let x = 5;
+let y = 10;
+
+// Logical AND (&&) example
+console.log(x < 10 && y > 5); // Output: true
+
+// Logical OR (||) example
+console.log(x === 5 || y === 5); // Output: true
+
+// Logical NOT (!) example
+console.log(!(x === y)); // Output: true
+```
+
+### Difference between "==" and "===" operators:
+- `==` is the equality operator and checks for value equality after coercion.
+- `===` is the strict equality operator and checks for both value and type equality without coercion. For example:
+```javascript
+console.log(5 == '5'); // Output: true (coerced equality check)
+console.log(5 === '5'); // Output: false (strict equality check)
+```
+
+### Number of Operators in JS:
+JavaScript has various types of operators. There are around **30 different operators** in JavaScript, including arithmetic, comparison, logical, assignment, bitwise, etc.
+
+### Use of `parseInt` in JavaScript:
+`parseInt` is used to parse a string and convert it into an integer. For instance:
+```javascript
+let numberString = "10";
+let number = parseInt(numberString); // Output: 10
+```
+
+### Finding odd and even numbers from user input:
+```javascript
+let userInput = prompt("Enter a number: ");
+let number = parseInt(userInput);
+
+if (number % 2 === 0) {
+    console.log(number + " is an even number.");
+} else {
+    console.log(number + " is an odd number.");
+}
+```
+
+This JavaScript code will prompt the user for input, convert it to an integer using `parseInt`, and then determine if the number is odd or even using the modulus operator (%).
